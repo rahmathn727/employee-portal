@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Information Form | Simplain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="logo">S</div>
+    <span>Simplain Team Directory</span>
+  </div>
+  <a href="index.html" class="top-btn">Team Directory</a>
+</header>
+
+<main class="form-page">
+  <div class="form-header">
+    <h1>Employee Information Form</h1>
+    <p>Please complete all sections below with your accurate personal and employment details.</p>
+  </div>
+
+  <form id="empInfoForm">
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>1</span>
+        <div>
+          <h2>Personal Details</h2>
+          <p>Enter your personal identification information.</p>
+        </div>
+      </div>
+
+      <label>Simplain Email ID <span>*</span></label>
+      <input type="email" name="simplainEmail" required>
+
+      <label>First Name <span>*</span></label>
+      <input type="text" name="firstName" required>
+
+      <label>Middle Name</label>
+      <input type="text" name="middleName">
+
+      <label>Last Name <span>*</span></label>
+      <input type="text" name="lastName" required>
+
+      <label>Father's Name <span>*</span></label>
+      <input type="text" name="fatherName" required>
+
+      <label>Mother's Name <span>*</span></label>
+      <input type="text" name="motherName" required>
+
+      <label>Date of Birth <span>*</span></label>
+      <input type="date" name="dob" required>
+
+      <label>Gender <span>*</span></label>
+      <select name="gender" required>
+        <option value="" disabled selected>Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Marital Status <span>*</span></label>
+      <select name="maritalStatus" id="maritalStatus" required>
+        <option value="" disabled selected>Select marital status</option>
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+      </select>
+
+      <label>Spouse Name</label>
+      <input type="text" name="spouseName" id="spouseName">
+
+      <label>Blood Group <span>*</span></label>
+      <select name="bloodGroup" required>
+        <option value="" disabled selected>Select blood group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="A1+">A1+</option>
+        <option value="A1-">A1-</option>
+        <option value="A1B+">A1B+</option>
+        <option value="A1B-">A1B-</option>
+        <option value="A2+">A2+</option>
+        <option value="A2-">A2-</option>
+        <option value="A2B+">A2B+</option>
+        <option value="A2B-">A2B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="Bombay Blood Group">Bombay Blood Group</option>
+        <option value="Rh-null (Rh zero)">Rh-null (Rh zero)</option>
+        <option value="INRA">INRA</option>
+      </select>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>2</span>
+        <div>
+          <h2>Contact Details</h2>
+          <p>Enter your personal contact information.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="contactDescription" rows="3"
+        placeholder="Enter any additional contact details..."></textarea>
+
+      <label>Personal Email ID <span>*</span></label>
+      <input type="email" name="personalEmail" required>
+
+      <label>Primary Mobile Number <span>*</span></label>
+      <input type="tel" name="primaryMobile" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter a valid 10-digit mobile number" required>
+
+      <label>Secondary Mobile Number <span>*</span></label>
+      <input type="tel" name="secondaryMobile" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter a valid 10-digit mobile number" required>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>3</span>
+        <div>
+          <h2>Permanent Address</h2>
+          <p>Enter your permanent residential address.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="permanentDescription" rows="3"
+        placeholder="Enter any additional address details..."></textarea>
+
+      <label>Door / Flat No. <span>*</span></label>
+      <input type="text" name="permDoorNo" required>
+
+      <label>Street Name 1 <span>*</span></label>
+      <input type="text" name="permStreet1" required>
+
+      <label>Street Name 2</label>
+      <input type="text" name="permStreet2">
+
+      <label>City <span>*</span></label>
+      <input type="text" name="permCity" required>
+
+      <label>State <span>*</span></label>
+      <input type="text" name="permState" required>
+
+      <label>Pincode <span>*</span></label>
+      <input type="text" name="permPincode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="Enter a valid 6-digit pincode" required>
+
+      <label>Country <span>*</span></label>
+      <input type="text" name="permCountry" required>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>4</span>
+        <div>
+          <h2>Communication Address</h2>
+          <p>Enter your current communication address.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="commDescription" rows="3"
+        placeholder="Enter any additional address details..."></textarea>
+
+      <label class="option" style="display:inline-flex; align-items:center; margin-bottom:10px;">
+        <input type="checkbox" id="sameAsPermanent"> Same as Permanent Address
+      </label>
+
+      <label>Door / Flat No. <span>*</span></label>
+      <input type="text" name="commDoorNo" required>
+
+      <label>Street Name 1 <span>*</span></label>
+      <input type="text" name="commStreet1" required>
+
+      <label>Street Name 2</label>
+      <input type="text" name="commStreet2">
+
+      <label>City <span>*</span></label>
+      <input type="text" name="commCity" required>
+
+      <label>State <span>*</span></label>
+      <input type="text" name="commState" required>
+
+      <label>Pincode <span>*</span></label>
+      <input type="text" name="commPincode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="Enter a valid 6-digit pincode" required>
+
+      <label>Country <span>*</span></label>
+      <input type="text" name="commCountry" required>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>5</span>
+        <div>
+          <h2>Qualification Details</h2>
+          <p>Enter your academic qualification and career start details.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="qualificationDescription" rows="3"
+        placeholder="Enter any additional qualification details..."></textarea>
+
+      <label>10th Percentage <span>*</span></label>
+      <input type="number" name="tenthPercentage" min="0" max="100" step="0.01" title="Enter a percentage between 0 and 100" required>
+
+      <label>12th/Diploma Percentage / CGPA <span>*</span></label>
+      <input type="number" name="twelfthPercentage" min="0" max="100" step="0.01" title="Enter a percentage or CGPA between 0 and 100" required>
+
+      <label>UG CGPA <span>*</span></label>
+      <input type="number" name="ugCgpa" min="0" max="10" step="0.01" title="Enter a CGPA between 0 and 10" required>
+
+      <label>PG CGPA</label>
+      <input type="number" name="pgCgpa" min="0" max="10" step="0.01" title="Enter a CGPA between 0 and 10">
+
+      <label>Date of Joining of First Company <span>*</span></label>
+      <input type="date" name="firstCompanyJoinDate" required>
+      <p style="margin-top:6px; color:#718096; font-size:13px;">
+        Select the date you joined your very first company/organization, using the calendar picker.
+      </p>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>6</span>
+        <div>
+          <h2>Documentation</h2>
+          <p>Provide your government ID and bank documentation details.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="documentationDescription" rows="3"
+        placeholder="Enter any additional documentation details..."></textarea>
+
+      <label>Aadhaar No. <span>*</span></label>
+      <input type="text" name="aadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number" required>
+
+      <label>Name in Aadhaar First Name <span>*</span></label>
+      <input type="text" name="aadhaarFirstName" required>
+
+      <label>Name in Aadhaar Last Name <span>*</span></label>
+      <input type="text" name="aadhaarLastName" required>
+
+      <label>Father's Aadhaar No</label>
+      <input type="text" name="fatherAadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number">
+
+      <label>Mother's Aadhaar No</label>
+      <input type="text" name="motherAadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number">
+
+      <label>PAN <span>*</span></label>
+      <input type="text" name="pan" class="uppercase-input" pattern="[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}" maxlength="10" title="Enter a valid PAN, e.g. ABCDE1234F" required>
+
+      <label>Bank Account Number <span>*</span></label>
+      <input type="text" name="bankAccountNumber" inputmode="numeric" pattern="[0-9]{9,18}" title="Enter a valid bank account number (9 to 18 digits)" required>
+
+      <label>IFSC <span>*</span></label>
+      <input type="text" name="ifsc" class="uppercase-input" pattern="[A-Za-z]{4}0[A-Za-z0-9]{6}" maxlength="11" title="Enter a valid IFSC code, e.g. SBIN0001234" required>
+
+      <label>EPF/UAN <span>*</span></label>
+      <input type="text" name="epfUan" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit UAN" required>
+
+      <label>ESI Number</label>
+      <input type="text" name="esiNumber" inputmode="numeric" pattern="[0-9]{10,17}" title="Enter a valid ESI number">
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>7</span>
+        <div>
+          <h2>At Simplain</h2>
+          <p>Confirm your employment details at Simplain.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="simplainDescription" rows="3"
+        placeholder="Enter any additional details..."></textarea>
+
+      <label>Date of Joining <span>*</span></label>
+      <input type="date" name="dateOfJoining" required>
+
+      <label>Designation <span>*</span></label>
+      <input type="text" name="designation" required>
+
+      <label>Employee ID <span>*</span></label>
+      <input type="text" name="employeeId" required>
+
+      <label>Declaration <span>*</span></label>
+      <label class="declaration">
+        <input type="checkbox" name="declaration" required>
+        I confirm that the information provided above is accurate and complete.
+      </label>
+    </section>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit Employee Information</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

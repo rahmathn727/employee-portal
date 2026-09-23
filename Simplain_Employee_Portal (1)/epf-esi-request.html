@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPF ESI Request Form | Simplain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="logo">S</div>
+    <span>Simplain Team Directory</span>
+  </div>
+  <a href="index.html" class="top-btn">Team Directory</a>
+</header>
+
+<main class="form-page">
+  <div class="form-header">
+    <h1>EPF ESI Request Form</h1>
+    <p>Please complete all 10 sections below with accurate family, address and bank details.</p>
+  </div>
+
+  <form id="epfEsiForm">
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>1</span>
+        <div>
+          <h2>Employee Details</h2>
+          <p>Enter your basic personal information.</p>
+        </div>
+      </div>
+
+      <label>Name <span>*</span></label>
+      <input type="text" name="employeeName" required>
+
+      <label>Gender <span>*</span></label>
+      <select name="gender" required>
+        <option value="" disabled selected>Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <label>Aadhaar No. <span>*</span></label>
+      <input type="text" name="aadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number" required>
+
+      <label>DOB <span>*</span></label>
+      <input type="date" name="dob" required>
+
+      <label>Marital Status <span>*</span></label>
+      <select name="maritalStatus" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>2</span>
+        <div>
+          <h2>Address</h2>
+          <p>Enter your current residential address.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="addressDescription" rows="3" placeholder="Enter any additional address details..."></textarea>
+
+      <label>Door/Flat no <span>*</span></label>
+      <input type="text" name="doorNo" required>
+
+      <label>Street Name1 <span>*</span></label>
+      <input type="text" name="streetName1" required>
+
+      <label>Street Name2</label>
+      <input type="text" name="streetName2">
+
+      <label>City <span>*</span></label>
+      <input type="text" name="city" required>
+
+      <label>State <span>*</span></label>
+      <input type="text" name="state" required>
+
+      <label>Pincode <span>*</span></label>
+      <input type="text" name="pincode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="Enter a valid 6-digit pincode" required>
+
+      <label>Country <span>*</span></label>
+      <input type="text" name="country" required>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>3</span>
+        <div>
+          <h2>Father Details</h2>
+          <p>Enter your father's details, if applicable.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="fatherDescription" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Name</label>
+      <input type="text" name="fatherName">
+
+      <label>Aadhaar No.</label>
+      <input type="text" name="fatherAadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number">
+
+      <label>DOB</label>
+      <input type="date" name="fatherDob" class="dob-age-input" data-age-target="fatherAge">
+
+      <label>Age</label>
+      <input type="number" name="fatherAge" id="fatherAge" min="0" max="120" readonly>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>4</span>
+        <div>
+          <h2>Mother Details</h2>
+          <p>Enter your mother's details, if applicable.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="motherDescription" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Name</label>
+      <input type="text" name="motherName">
+
+      <label>Aadhaar No.</label>
+      <input type="text" name="motherAadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number">
+
+      <label>DOB</label>
+      <input type="date" name="motherDob" class="dob-age-input" data-age-target="motherAge">
+
+      <label>Age</label>
+      <input type="number" name="motherAge" id="motherAge" min="0" max="120" readonly>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>5</span>
+        <div>
+          <h2>Spouse Details</h2>
+          <p>Enter your spouse's details, if applicable.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="spouseDescription" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Name</label>
+      <input type="text" name="spouseName">
+
+      <label>Aadhaar No.</label>
+      <input type="text" name="spouseAadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number">
+
+      <label>DOB</label>
+      <input type="date" name="spouseDob" class="dob-age-input" data-age-target="spouseAge">
+
+      <label>Age</label>
+      <input type="number" name="spouseAge" id="spouseAge" min="0" max="120" readonly>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>6</span>
+        <div>
+          <h2>Child 1 Details</h2>
+          <p>Enter your first child's details, if applicable.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="child1Description" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Name</label>
+      <input type="text" name="child1Name">
+
+      <label>Aadhaar No.</label>
+      <input type="text" name="child1AadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number">
+
+      <label>DOB</label>
+      <input type="date" name="child1Dob" class="dob-age-input" data-age-target="child1Age">
+
+      <label>Age</label>
+      <input type="number" name="child1Age" id="child1Age" min="0" max="120" readonly>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>7</span>
+        <div>
+          <h2>Child 2 Details</h2>
+          <p>Enter your second child's details, if applicable.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="child2Description" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Name</label>
+      <input type="text" name="child2Name">
+
+      <label>Aadhaar No.</label>
+      <input type="text" name="child2AadhaarNo" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" title="Enter a valid 12-digit Aadhaar number">
+
+      <label>DOB</label>
+      <input type="date" name="child2Dob" class="dob-age-input" data-age-target="child2Age">
+
+      <label>Age</label>
+      <input type="number" name="child2Age" id="child2Age" min="0" max="120" readonly>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>8</span>
+        <div>
+          <h2>Nominee Details</h2>
+          <p>Enter your EPF/ESI nominee.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="nomineeDescription" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Nominee Name <span>*</span></label>
+      <input type="text" name="nomineeName" required>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>9</span>
+        <div>
+          <h2>Bank Details</h2>
+          <p>Enter your bank account information.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="bankDescription" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Bank A/c No. <span>*</span></label>
+      <input type="text" name="bankAccountNumber" inputmode="numeric" pattern="[0-9]{9,18}" title="Enter a valid bank account number (9 to 18 digits)" required>
+
+      <label>Account Holder Name <span>*</span></label>
+      <input type="text" name="accountHolderName" required>
+
+      <label>Branch Code <span>*</span></label>
+      <input type="text" name="branchCode" required>
+
+      <label>Bank Address <span>*</span></label>
+      <textarea name="bankAddress" rows="3" required></textarea>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>10</span>
+        <div>
+          <h2>Contact Details</h2>
+          <p>Enter your contact information for this request.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="contactDescription" rows="3" placeholder="Enter any additional details..."></textarea>
+
+      <label>Mobile No. <span>*</span></label>
+      <input type="tel" name="mobileNo" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter a valid 10-digit mobile number" required>
+
+      <label>Email ID <span>*</span></label>
+      <input type="email" name="emailId" required>
+
+      <label>PAN No. <span>*</span></label>
+      <input type="text" name="panNo" class="uppercase-input" pattern="[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}" maxlength="10" title="Enter a valid PAN, e.g. ABCDE1234F" required>
+
+      <label>Declaration <span>*</span></label>
+      <label class="declaration">
+        <input type="checkbox" name="declaration" required>
+        Yes, I confirm the information above is correct.
+      </label>
+    </section>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit EPF ESI Request</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

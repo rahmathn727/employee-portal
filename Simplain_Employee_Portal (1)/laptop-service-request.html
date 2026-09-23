@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Service Request Form | Simplain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="logo">S</div>
+    <span>Simplain Team Directory</span>
+  </div>
+  <a href="index.html" class="top-btn">Team Directory</a>
+</header>
+
+<main class="form-page">
+  <div class="form-header">
+    <h1>Laptop Service Request Form</h1>
+    <p>Use this form to report a laptop issue.</p>
+  </div>
+
+  <form id="laptopServiceForm">
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>1</span>
+        <div>
+          <h2>Employee Laptop Issue</h2>
+          <p>Enter your details and describe the issue.</p>
+        </div>
+      </div>
+
+      <label>Simplain Email ID <span>*</span></label>
+      <input type="email" name="simplainEmail" required>
+
+      <label>Date</label>
+      <input type="date" name="issueDate">
+
+      <label>Issue Type</label>
+      <select name="issueType">
+        <option value="" disabled selected>Select issue type</option>
+        <option value="Hardware Issue">Hardware Issue</option>
+        <option value="Software Issue">Software Issue</option>
+        <option value="Battery Replacement">Battery Replacement</option>
+        <option value="Screen Damage">Screen Damage</option>
+        <option value="Slow Performance">Slow Performance</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Issue <span>*</span></label>
+      <textarea name="issue" rows="4" placeholder="Describe the issue in detail..." required></textarea>
+
+      <label>Amount</label>
+      <input type="number" name="amount" min="0" step="0.01" placeholder="Estimated repair cost, if known">
+
+      <label>Declaration <span>*</span></label>
+      <label class="declaration">
+        <input type="checkbox" name="declaration" required>
+        Yes, I confirm the above details are correct.
+      </label>
+    </section>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit Service Request</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee General Request Form | Simplain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="logo">S</div>
+    <span>Simplain Team Directory</span>
+  </div>
+  <a href="index.html" class="top-btn">Team Directory</a>
+</header>
+
+<main class="form-page">
+  <div class="form-header">
+    <h1>Employee General Request Form</h1>
+    <p>Use this form for any general request.</p>
+  </div>
+
+  <form id="generalRequestForm">
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>1</span>
+        <div>
+          <h2>Employee General Request</h2>
+          <p>Enter your details and describe your request.</p>
+        </div>
+      </div>
+
+      <label>Simplain Email ID <span>*</span></label>
+      <input type="email" name="simplainEmail" required>
+
+      <label>General Request <span>*</span></label>
+      <textarea name="generalRequest" rows="5" placeholder="Describe your request in detail..." required></textarea>
+
+      <label>Declaration <span>*</span></label>
+      <label class="declaration">
+        <input type="checkbox" name="declaration" required>
+        Yes, I confirm the above details are correct.
+      </label>
+    </section>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit Request</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

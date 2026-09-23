@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Leave Request Form | Simplain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="logo">S</div>
+    <span>Simplain Team Directory</span>
+  </div>
+  <a href="index.html" class="top-btn">Team Directory</a>
+</header>
+
+<main class="form-page">
+  <div class="form-header">
+    <h1>Employee Leave Request Form</h1>
+    <p>Use this form to request leave from work.</p>
+  </div>
+
+  <form id="leaveRequestForm">
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>1</span>
+        <div>
+          <h2>Employee Leave Request</h2>
+          <p>Enter your leave dates and reason below.</p>
+        </div>
+      </div>
+
+      <label>Simplain Email ID <span>*</span></label>
+      <input type="email" name="simplainEmail" required>
+
+      <label>From Date <span>*</span></label>
+      <input type="date" name="fromDate" id="leaveFromDate" required>
+
+      <label>To Date <span>*</span></label>
+      <input type="date" name="toDate" id="leaveToDate" required>
+
+      <label>Total Days <span>*</span></label>
+      <input type="number" name="totalDays" id="leaveDays" min="0.5" step="0.5" required>
+
+      <label>Reason <span>*</span></label>
+      <textarea name="reason" rows="4" placeholder="Enter the reason for your leave..." required></textarea>
+
+      <label>Declaration <span>*</span></label>
+      <label class="declaration">
+        <input type="checkbox" name="declaration" required>
+        Yes, I confirm that the above details are correct and accurate.
+      </label>
+    </section>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit Leave Request</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

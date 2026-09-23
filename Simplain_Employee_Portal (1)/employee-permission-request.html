@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Permission Request Form | Simplain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="logo">S</div>
+    <span>Simplain Team Directory</span>
+  </div>
+  <a href="index.html" class="top-btn">Team Directory</a>
+</header>
+
+<main class="form-page">
+  <div class="form-header">
+    <h1>Employee Permission Request Form</h1>
+    <p>Use this form to request short permission during working hours.</p>
+  </div>
+
+  <form id="permissionRequestForm">
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>1</span>
+        <div>
+          <h2>Employee Permission Request</h2>
+          <p>Enter the date, time and reason for your permission request.</p>
+        </div>
+      </div>
+
+      <label>Simplain Email ID <span>*</span></label>
+      <input type="email" name="simplainEmail" required>
+
+      <label>Date <span>*</span></label>
+      <input type="date" name="permissionDate" required>
+
+      <label>From Time <span>*</span></label>
+      <input type="time" name="fromTime" id="permissionFromTime" required>
+
+      <label>To Time <span>*</span></label>
+      <input type="time" name="toTime" id="permissionToTime" required>
+
+      <label>Total Hours <span>*</span></label>
+      <input type="number" name="totalHours" id="permissionTotalHours" min="0" step="0.25" required>
+
+      <label>Reason <span>*</span></label>
+      <textarea name="reason" rows="4" placeholder="Enter the reason for your permission request..." required></textarea>
+
+      <label>Declaration <span>*</span></label>
+      <label class="declaration">
+        <input type="checkbox" name="declaration" required>
+        Yes, I declare the above information is accurate and I will return within the stated time.
+      </label>
+    </section>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit Permission Request</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
