@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exit Interview Form | Simplain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="logo">S</div>
+    <span>Simplain Team Directory</span>
+  </div>
+  <a href="index.html" class="top-btn">Team Directory</a>
+</header>
+
+<main class="form-page">
+  <div class="form-header">
+    <h1>Exit Interview Form</h1>
+    <p>Please complete the following information before your termination.</p>
+  </div>
+
+  <form id="exitForm">
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>1</span>
+        <div>
+          <h2>Employee Details</h2>
+          <p>Enter the employee's basic information.</p>
+        </div>
+      </div>
+
+      <label>Employee Name <span>*</span></label>
+      <input type="text" name="employeeName" required>
+
+      <label>Position <span>*</span></label>
+      <input type="text" name="position" required>
+
+      <label>Department <span>*</span></label>
+      <input type="text" name="department" required>
+
+      <label>Date of Termination <span>*</span></label>
+      <input type="date" name="terminationDate" required>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>2</span>
+        <div>
+          <h2>Documentation Details</h2>
+          <p>Confirm the required documentation.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="documentationDescription" rows="3"
+        placeholder="Enter any documentation details..."></textarea>
+
+      <label>Documentation <span>*</span></label>
+      <div class="options">
+        <label class="option"><input type="radio" name="documentation" value="Completed" required> Completed</label>
+        <label class="option"><input type="radio" name="documentation" value="Pending"> Pending</label>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>3</span>
+        <div>
+          <h2>Salary / Vacation Accrual</h2>
+          <p>Provide salary and vacation accrual information.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="salaryDescription" rows="3"
+        placeholder="Enter salary or vacation details..."></textarea>
+
+      <label>Salary / Vacation Accrual <span>*</span></label>
+      <div class="options">
+        <label class="option"><input type="radio" name="salary" value="Cleared" required> Cleared</label>
+        <label class="option"><input type="radio" name="salary" value="Pending"> Pending</label>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>4</span>
+        <div>
+          <h2>Company Property Returned</h2>
+          <p>Confirm all company property has been returned.</p>
+        </div>
+      </div>
+
+      <label>Description <small>(optional)</small></label>
+      <textarea name="propertyDescription" rows="3"
+        placeholder="Enter property return details..."></textarea>
+
+      <label>Company Property Returned <span>*</span></label>
+      <div class="checkbox-grid">
+        <label class="option"><input type="checkbox" name="property" value="Laptop"> Laptop</label>
+        <label class="option"><input type="checkbox" name="property" value="ID Card"> ID Card</label>
+        <label class="option"><input type="checkbox" name="property" value="Access Card"> Access Card</label>
+        <label class="option"><input type="checkbox" name="property" value="Charger"> Charger</label>
+        <label class="option"><input type="checkbox" name="property" value="Other"> Other</label>
+      </div>
+
+      <label>Other - Please Specify</label>
+      <input type="text" name="otherProperty" placeholder="Specify other company property">
+    </section>
+
+    <section class="form-section">
+      <div class="section-title">
+        <span>5</span>
+        <div>
+          <h2>Comments &amp; Signatures</h2>
+          <p>Complete the final confirmation.</p>
+        </div>
+      </div>
+
+      <label>Comments</label>
+      <textarea name="comments" rows="4" placeholder="Enter your comments..."></textarea>
+
+      <label>Type your Full Name to confirm the above is accurate <span>*</span></label>
+      <input type="text" name="fullName" required>
+
+      <label>Today's Date <span>*</span></label>
+      <input type="date" id="todayDate" name="todayDate" required>
+
+      <label>Declaration <span>*</span></label>
+      <label class="declaration">
+        <input type="checkbox" name="declaration" required>
+        I confirm that the information provided above is accurate and complete.
+      </label>
+    </section>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit Exit Interview</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
